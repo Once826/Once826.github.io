@@ -45,14 +45,12 @@ function createSection(id, title, content) {
     }
 }
 
-// Populate sections dynamically
 document.addEventListener("DOMContentLoaded", () => {
     createSection("about", "About Me", profileData.about);
 
     createSection("experience", "Experience & Education", profileData.experience);
     createSection("hobbies", "Hobbies & Passions", profileData.hobbies);
 
-    // Animation on scroll
     const sections = document.querySelectorAll("section");
     const revealOnScroll = () => {
         sections.forEach(section => {
